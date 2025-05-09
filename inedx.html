@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist & Todos</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <div class="container">
+        <header class="pulse">
+            <h1>My Wishlist & Todos</h1>
+            <p class="subtitle">Track things you want to do, eat, or visit</p>
+        </header>
+
+        <section class="input-section">
+            <h2>Add New Item</h2>
+            <p>What do you want to do, eat, or visit?</p>
+            
+            <div class="input-container">
+                <input type="text" id="item-input" placeholder="e.g., Try sushi, Visit Paris, Watch a movie">
+                <select id="category-select">
+                    <option value="eat">🍽️ Eat/Drink</option>
+                    <option value="visit">✈️ Visit/Go</option>
+                    <option value="do">✅ Do/Experience</option>
+                    <option value="buy">🛍️ Buy</option>
+                    <option value="other">✨ Other</option>
+                </select>
+                <button id="add-item-btn">Add</button>
+            </div>
+        </section>
+        
+        <div class="items-container" id="items-container">
+            <div class="empty-state" id="empty-state">Your wishlist is empty. Add your first item!</div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-number" id="total-count">0</div>
+                <div class="stat-label">Total Items</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="eat-count">0</div>
+                <div class="stat-label">Food/Drink</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="visit-count">0</div>
+                <div class="stat-label">Places to Visit</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="do-count">0</div>
+                <div class="stat-label">Things to Do</div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
